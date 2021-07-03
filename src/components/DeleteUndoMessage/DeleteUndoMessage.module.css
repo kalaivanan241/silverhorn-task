@@ -1,0 +1,24 @@
+.deletedMessage {
+  position: absolute;
+  background: linear-gradient(82.84deg, #4acf8c 0%, #75eda6 100%);
+  color: #fff;
+  bottom: 5px;
+  left: 5px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  border-bottom: none;
+  border-right: none;
+  z-index: 2;
+}
+
+.deletedMessage button {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border-style: none;
+}
+
+.deletedMessage button:hover {
+  cursor: pointer;
+}

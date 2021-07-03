@@ -1,0 +1,29 @@
+.tabFilter {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  color: #fff;
+  margin: 10px 0;
+}
+
+.filterItem {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 0.5s;
+  border-bottom: 1px solid;
+}
+
+.filterItem:hover {
+  font-weight: bold;
+}
+
+.filterActive {
+  background: white;
+  color: #333;
+  border-radius: 30px;
+  font-weight: bold;
+}
