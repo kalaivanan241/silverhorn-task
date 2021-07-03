@@ -26,9 +26,13 @@ const Todos = () => {
   const { setActiveTab, filteredTodos, activeTab } = useTodoFilter();
   const [showUndo, setShowUndo] = useState(false);
 
-  useEffect(() => {
+  const getData = React.useCallback(() => {
     dispatch(fetchTodosAsync());
-  }, []);
+  }, [dispatch]);
+
+  useEffect(() => {
+    getData();
+  }, [getData, dispatch]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,7 +65,7 @@ const Todos = () => {
 
   const setShow = React.useCallback(() => {
     return (val) => setShowUndo(val);
-  });
+  }, []);
 
   return (
     <div className={styles.todoSection}>

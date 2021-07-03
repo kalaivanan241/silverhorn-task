@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector } from "react-redux";
-import { selectTodos } from "../features/todos/todoSlice";
+import { selectTodos } from "../screens/todos/todoSlice";
 
 export const todoTabs = ["All", "Completed", "Active"];
 
